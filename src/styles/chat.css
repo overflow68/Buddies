@@ -1,0 +1,47 @@
+.chat{
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    color:white;
+    font-size: 0.9rem;
+    height: 500px;
+    position: relative;
+}
+
+.cont-received{
+    display: flex;
+    align-items: center;
+}
+
+.cont-sent{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+
+.img{
+    border-radius: 50%;
+    width: 40px;
+    margin: 10px;
+}
+
+
+.cont{
+    display: flex;
+    align-items: center;
+}
+
+.received-text{
+    background-color: rgb(0, 110, 255);
+    padding: 6px;
+    border-radius: 50px;
+}
+.sent-text{
+    background-color: rgb(0, 57, 133);
+    padding: 6px;
+    border-radius: 50px;
+}
+
+

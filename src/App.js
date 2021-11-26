@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import Chat from './components/Chat.js'
 import SignIn from './components/SignIn';
 import { useAuthState } from 'react-firebase-hooks/auth';
