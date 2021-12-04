@@ -21,7 +21,7 @@ function SendMessage() {
     
     return (
         <div className="send-message">
-            <div className="input-style"><input  value={msg} onKeyPress={sendMsg} onChange={e => setMsg(e.target.value)} /></div>
+            <div className="input-style"><input placeholder="Type something..."  value={msg} onKeyPress={sendMsg} onChange={e => setMsg(e.target.value)} /></div>
         </div>
     )
 }

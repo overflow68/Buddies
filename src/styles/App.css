@@ -1,5 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 *{
     padding: 0;
     margin:0;
     box-sizing: border-box;
+}
+body{
+    background-color: #003566;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info{
+    font-size: 6rem;
+}
+
+.signin{
+    margin-top: 150px;
+}
+
+.signin-btn{
+    width: 120px;
+    height: 70px;
+    font-size: 1rem;
+    background-color: yellow;
+}
+
+.info{
+    font-family: 'Fredoka One', cursive;
+    color:yellow ;
+    opacity: 0.4;
 }

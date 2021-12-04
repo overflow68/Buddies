@@ -24,8 +24,9 @@ function SignIn() {
       });
       }
     return (
-        <div>
-            <button onClick={login}>Sign in with Google</button>
+        <div className="signin">
+            <p className="info">SIGN IN TO ACCESS CHAT</p> 
+            <button className="signin-btn" onClick={login}>Sign in with Google</button>
         </div>
     )
 }

@@ -4,7 +4,7 @@
     width: 100%;
     display: flex;
     border: 1px solid black;
-    background-color: black;
+    background-color: #001d3d;
     padding: 5px;
 }
 
@@ -24,6 +24,6 @@ input:focus{
 .input-style{
     padding: 10px;
     border-radius: 50px;
-    background-color: grey;
+    background-color: #ffd60a;
     width: 100%;
 }

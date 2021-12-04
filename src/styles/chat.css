@@ -1,12 +1,13 @@
 .chat{
     text-align: center;
-    width: 400px;
+    width: 350px;
     margin: auto;
     border: 1px solid black;
     color:white;
     font-size: 0.9rem;
     height: 500px;
     position: relative;
+    background-color: #001d3d;
 }
 
 .cont-received{
@@ -34,12 +35,12 @@
 }
 
 .received-text{
-    background-color: rgb(0, 110, 255);
+    background-color: #003566;
     padding: 6px;
     border-radius: 50px;
 }
 .sent-text{
-    background-color: rgb(0, 57, 133);
+    background-color: #003566;
     padding: 6px;
     border-radius: 50px;
 }
