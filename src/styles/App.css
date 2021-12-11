@@ -4,11 +4,13 @@
     margin:0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #003566;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
+   
 }
 
 .info{
@@ -24,6 +26,8 @@ body{
     height: 70px;
     font-size: 1rem;
     background-color: yellow;
+    border-radius: 20px;
+    border: none;
 }
 
 .info{
@@ -31,3 +35,8 @@ body{
     color:yellow ;
     opacity: 0.4;
 }
+
+.locker{
+    color: rgb(180, 89, 89);
+}
+
