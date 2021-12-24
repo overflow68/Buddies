@@ -10,7 +10,7 @@ function Chat() {
     const [messages, setMessages] = useState([])
     
     async function getMessages(){
-        const q = query(collection(db, "messages"),orderBy("createdAt","desc"),limit(11));
+        const q = query(collection(db, "messages"),orderBy("createdAt","desc"),limit(50));
         
         const unsubscribe = onSnapshot(q, (querySnapshot) => {
             const msgs = [];
@@ -31,14 +31,16 @@ function Chat() {
     return (
         <div>
             <div className="container">
+                <div className='chat-cont'>
+                    <div className='signout-btn-cont'><SignOut/></div>
             <div className="chat">
-                <SignOut/>
+                
                 {messages.map(({ id, message, photoURL}) => (
                     <Message  class={`msg ${id === auth.currentUser.uid ? 'sent' : 'received'}`} img={photoURL} msg={message}/>
                     
                 ))}
-                <SendMessage/>
-            </div></div>
+                
+            </div><SendMessage/></div></div>
             
         </div>
     )

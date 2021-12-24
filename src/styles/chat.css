@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 .chat{
     text-align: center;
     width: 80%;
@@ -8,6 +9,8 @@
     font-size: 1rem;
     position: relative;
     background-color: #001d3d;
+    overflow-y:scroll;
+    font-family: Josefin Sans;
     
 }
 
@@ -36,12 +39,13 @@
 }
 
 .received-text{
-    background-color: #003566;
+    background-color: #97acbe;
     padding: 6px;
     border-radius: 50px;
+    color: black;
 }
 .sent-text{
-    background-color: #003566;
+    background-color: #1e8df5;
     padding: 6px;
     border-radius: 50px;
 }
@@ -53,4 +57,22 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
+}
+
+.signout-btn-cont{
+    background-color: rgb(43, 43, 43);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 80%;
+    margin: auto;
+
+
+}
+
+.chat-cont{
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
