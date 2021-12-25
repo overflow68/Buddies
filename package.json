@@ -1,7 +1,7 @@
 {
   "name": "buddies",
   "version": "0.1.0",
-  "homepage": "https://overflow68.github.io/buddies/",
+  "homepage": "https://overflow68.github.io/Buddies/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",

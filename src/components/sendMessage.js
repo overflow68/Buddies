@@ -4,7 +4,7 @@ import {addDoc,collection, serverTimestamp} from 'firebase/firestore'
 import '../styles/input.css'
 
 
-function SendMessage() {
+function SendMessage({scroll}) {
     const [msg, setMsg] = useState("")
     async function sendMsg(e){
         if(msg !== "" && e.key==="Enter"){
@@ -17,7 +17,9 @@ function SendMessage() {
             createdAt: serverTimestamp()
 
           });
-          setMsg("")}}
+          setMsg("")}
+          scroll.current.scrollIntoView({behavior: "smooth"})
+        }
     
     return (
         <div className="send-message">
