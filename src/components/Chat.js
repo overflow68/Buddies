@@ -14,7 +14,7 @@ function Chat() {
         
         const unsubscribe = onSnapshot(q, (querySnapshot) => {
             const msgs = [];
-            scroll.current.scrollIntoView({behavior: "smooth"})
+            
             querySnapshot.forEach((doc) => {
 
                 msgs.push(doc.data());
@@ -22,11 +22,12 @@ function Chat() {
             });
             msgs.reverse()
             setMessages(msgs)
+            scroll.current.scrollIntoView({behavior: "smooth"})
           });
     }
     useEffect(() => {
         getMessages()
-        scroll.current.scrollIntoView({behavior: "smooth"})
+        
     }, [])
 
     return (
